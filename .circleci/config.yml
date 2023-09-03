@@ -10,6 +10,7 @@ jobs:
           command: |
             apt-get update
             apt-get install -y curl
+            docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD zhaoge5555
             docker build -t zhaoge5555/node .
             docke run zhaoge5555/node
 
