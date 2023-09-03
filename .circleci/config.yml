@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: 'circleci/node:latest'
+      - image: 'cimg/node:latest'
         auth:
           username: $DOCKER_USERNAME
           password: $DOCKER_PASSWORD
