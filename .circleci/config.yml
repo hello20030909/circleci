@@ -30,7 +30,13 @@ jobs:
     steps:
       - run:
           name: Run service
-          command: apt-get update && apt-get install -y curl && node index.js
+          command: docker pull zhaoge5555/node:latest
+      - run:
+          name: Run build
+          command: docker build -t node .
+       - run:
+          name: Run run
+          command: docker run node
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
