@@ -30,7 +30,7 @@ jobs:
     steps:
       - run:
           name: Run service
-          command: apt-get update && apt-get install -y curl && node index.js
+          command: apt-get update && apt-get install -y curl
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
