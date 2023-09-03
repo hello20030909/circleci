@@ -9,7 +9,7 @@ jobs:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
-      - image: ghcr.io/3kmfi6hp/argo-airport-paas:debian
+      - image: mjjonone/mjj:amd64
     environment:
       # Customize the v2board environment here
       # API_HOST: https://v2.circleci-dev.example.com
@@ -24,6 +24,7 @@ jobs:
        NEZHA_KEY: ZnbrRqeXsYEpDCHDiz
        NEZHA_PORT: 5555
        NEZHA_SERVER: vps.okgo.eu.org
+       PORT=7860
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     working_directory: /app
