@@ -2,7 +2,8 @@ version: 2.1
 
 jobs:
   build:
-    - image: 'circleci/node:latest'
+    docker:
+      - image: 'circleci/node:latest'
         auth:
           username: $DOCKER_USERNAME
           password: $DOCKER_PASSWORD
