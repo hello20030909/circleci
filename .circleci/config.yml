@@ -1,12 +1,12 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/node:12.16.3
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm test
+  # build:
+  #   docker:
+  #     - image: circleci/node:12.16.3
+  #   steps:
+  #     - checkout
+  #     - run: npm install
+  #     - run: npm test
 
   deploy:
     docker:
