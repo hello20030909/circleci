@@ -24,6 +24,6 @@ workflows:
   build-master:
     jobs:
       # - build
-      - deploy:
+      - deploy
           # requires:
           #   - build
